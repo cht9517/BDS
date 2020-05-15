@@ -358,7 +358,7 @@ namespace TSB
                 {
                     MessageBox.Show("文件尺寸不正确，请确认文件是否正确！");
                 }
-            }
+            }  
         }
 
         private void DICorrRead_CallBack(int com_id)
