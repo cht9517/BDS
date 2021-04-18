@@ -222,12 +222,13 @@ namespace TSB
 
         public Task task_tsb_rx = new Task(tsb_rx_thd);
 
-        public void port_open(string portName)
+        public void port_open(string portName, int baud)
         {
             if (port_is_open())
                 sPort.Close();
 
             sPort.PortName = portName;
+            sPort.BaudRate = baud;
             sPort.Open();
         }
 
